@@ -1,0 +1,145 @@
+body {
+	margin:0;
+    font-family: Helvetica,sans-serif;
+    font-size: small;
+}
+#header {
+    background-color: #A6A6A6;
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#menu {
+    background-color: #A6A6A6;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#list_wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#list {
+    list-style: none outside none;
+    margin: 0;
+    padding: 4px 0 0;
+}
+#list li {
+    
+}
+#list img {
+    float: left;
+    padding: 2px 5px 0;
+    width:16px;
+    height:16px
+}
+#list hr {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border: medium none;
+    height: 1px;
+    margin: 4px 0;
+}
+#list span {
+    color: #B5B5B5;
+    padding-left: 5px;
+}
+#list a {
+    color: #3D3D3D;
+    text-decoration: none;
+}
+#list a:hover {
+    color: #9A9A9A;
+}
+#question {
+    border:none;
+    float: right;
+    position: relative;
+    top: 4px;
+}
+#title {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    color: #FFFFFF;
+    font-family: Helvetica;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.7);
+}
+#arrow-border {
+    border-color:transparent transparent #666666;
+    border-style:solid;
+    border-width:10px;
+    height:0;
+    position:absolute;
+    top:-21px;
+    width:0;
+}
+
+#arrow {
+    border-color:transparent transparent #EAEAEA;
+    border-style:solid;
+    border-width:10px;
+    height:0;
+    position:absolute;
+    top:-20px;
+    width:0;
+}
+#bubble {
+    background-color: #EAEAEA;
+    border: 1px solid #666666;
+    box-shadow: 2px 2px 5px #999797;
+    left: 1412px;
+    margin: -3px;
+    padding: 10px;
+    position: relative;
+    width: 250px;
+    z-index: 1;
+}
+#bubble span {
+    color: #3D3D3D;
+    text-align: justify;
+}
+#bubble a {
+    color: #4D9EB4;
+    font-weight: bold;
+    text-decoration: none;
+}
+#question {
+    background: url("../img/csg-4d8e256c518bc.png") no-repeat scroll left top transparent;
+    background-position: 0 -140px; width: 20px;
+    border: medium none;
+    height: 20px;
+    width: 20px;
+    margin: auto;
+    border:none;
+    float: right;
+    position: relative;
+    top: 6px;
+    cursor: pointer;
+}
+#question:active {
+    background-position: 0 -210px; width: 20px;
+    width: 20px;
+    height: 20px;
+}
+#close {
+    background: url("../img/csg-4d8e256c518bc.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    float: right;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+}
+#close:active {
+    background-position: 0 -70px; width: 20px; height: 20px;
+}
+

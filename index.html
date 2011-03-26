@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>API lista</title>
+
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="robots" content="shutdown -s" />
+        <meta name="description" content="Magyar API lista" />
+
+        <link rel="stylesheet" href="./assets/css/stylesheet.css" />
+    </head>
+<body>
+        <div id="header">
+            <div id="menu">
+                <!--
+                <a href=""><img class="by" src="bash.png" /></a>
+                -->
+                <span id="title">Magyar <abbr title="Application programming interface">API</abbr> lista</span>
+                <button id="question"></button>
+            </div>
+            <div id="bubble" style="display: none;">
+                <button id="close"></button>
+                <span>Tudsz olyanról API-ról ami nincs a listán? Ötleted vagy észrevételed volna? Dobj egy twittet @<a href="http://twitter.com/#!/zoltanpolgar">zoltanpolgar</a></span>
+                <div id="arrow-border"></div>
+                <div id="arrow"></div>
+            </div>
+        </div>
+	<div id="list_wrapper">
+        <ul id="list">
+            <li>
+                <img src="./assets/img/citatum.ico" />
+                <a href="http://www.citatum.hu/api.php">citatum.hu</a>
+                <span>Idézetek</span>
+            </li>
+            <hr/>
+            <li>
+                <img src="./assets/img/dolgomvan.gif" />
+                <a href="http://dolgomvan.hu/index/api">dolgomvan.hu</a>
+                <span>információ- és projektmenedzser</span>
+            </li>
+            <hr/>
+            <li>
+                <img src="./assets/img/dotroll.ico.gif" />
+                <a href="https://github.com/dotroll/DotRoll-API-PHP-SDK">dotroll.hu</a>
+                <span>domain regisztráció, tárhely</span>
+            </li>
+            <hr/>
+            <li>
+                <img src="./assets/img/elvira.ico"/>
+                <a href="http://orocepest.dyndns.org/elvira/help">elvira.hu</a>
+                <span>vasúti menetrend <b>nem hivatalos API</b> by <a href="http://yamm.hu/oroce">@oroce</a></span>
+            </li>
+            <hr/>
+            <li>
+                <img src="./assets/img/iwiw.ico" />
+                <a href="http://dev.iwiw.hu/wiki/index.php/Kezd%C5%91lap">iwiw.hu</a>
+                <span>iwiw</span>
+            </li>
+            <hr/>
+            <li>
+                <img src="./assets/img/miner.ico.gif" />
+                <a href="http://api.miner.hu/">miner.hu</a>
+                <span>kereső</span>
+            </li>
+            <hr/>
+            <li>
+                <img src="./assets/img/nemzetibank.ico" />
+                <a href="http://english.mnb.hu/Statisztika/data-and-information/mnben_statisztikai_idosorok/exchange-rates/webservice-exchange-rates">mnb.hu</a>
+                <span>valutaváltó</span>
+            </li>
+            <hr/>
+            <li>
+                <img src="./assets/img/napiarfolyam.ico" />
+                <a href="http://napiarfolyam.hu/api">napiarfolyam.hu</a>
+                <span>árfolyamok</span>
+            </li>
+            <hr/>
+            <li>
+                <img src="./assets/img/tinyurl.ico" />
+                <a href="http://tinyurl.hu/api.php">tinyurl.hu</a>
+                <span>linkrövidítő</span>
+            </li>
+            <hr/>
+            <li>
+                <img src="./assets/img/turulmeme.ico" />
+                <a href="http://turulmeme.com/api">turulmeme.com</a>
+                <span>hírgyűjtő</span>
+            </li>
+            <hr/>
+            <li>
+                <img src="./assets/img/tvn.ico" />
+                <a href="http://devapi.www.tvn.hu/doc/index.tvn">tvn.hu</a>
+                <span>kép és videótár, TV műsor stb.</span>
+            </li>
+        </ul>
+	</div>
+    <script type="text/javascript">
+        document.getElementById("question").addEventListener("click",function(){
+            document.getElementById("bubble").style.left = ((parseInt((window.innerWidth-document.getElementById("menu").clientWidth)/2)+document.getElementById("menu").clientWidth)-27)+"px";
+            document.getElementById("bubble").style.display = "block";
+        },false);
+        document.getElementById("close").addEventListener("click",function(){
+            document.getElementById("bubble").style.display = "none";
+        },false);
+        window.onresize = function() {
+            document.getElementById("bubble").style.display = "none";
+        }
+    </script>
+</body>
+</html>
