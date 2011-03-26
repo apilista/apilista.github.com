@@ -31,7 +31,7 @@ body {
 }
 #list img {
     float: left;
-    padding: 2px 5px 0;
+    padding: 0 5px 0;
     width:16px;
     height:16px
 }
